@@ -1,5 +1,4 @@
+require("alex.set")
+require("alex.remap")
 require("alex.lazy_init")
-
-vim.cmd("set number")
-vim.cmd("set relativenumber")
 
