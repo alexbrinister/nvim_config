@@ -32,5 +32,7 @@ return {
 				enable = true,      
 			},
 		})
+        
+        vim.treesitter.language.register("templ", "templ")
 	end
 }	  
