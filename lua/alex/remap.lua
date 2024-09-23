@@ -38,3 +38,9 @@ vim.keymap.set(
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+vim.keymap.set("n", "<leader>b", ":!.\\build.bat", opts)
+vim.keymap.set("n", "<leader>B", ":!.\\build_release.bat", opts)
+vim.keymap.set("n", "<leader>r", ":!.\\build\\cgame.exe", opts)
+
+vim.keymap.set("n", "<leader>db", ":!remedybg -g -q debugger.rdbg", opts)
