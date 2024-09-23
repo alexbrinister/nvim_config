@@ -2,6 +2,10 @@ return {
     "VonHeikemen/lsp-zero.nvim",
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        "hrsh7th/cmp-cmdline",
+        "saadparwaiz1/cmp_luasnip",
         "hrsh7th/nvim-cmp",
         "neovim/nvim-lspconfig",
         "williamboman/mason.nvim",
@@ -53,6 +57,8 @@ return {
         cmp.setup({
             sources = {
                 { name = 'nvim_lsp' },
+                { name = 'luasnip' },
+                { name = 'buffer' },
             },
             mapping = cmp.mapping.preset.insert({
                 -- `Enter` key to confirm completion
