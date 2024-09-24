@@ -55,6 +55,17 @@ return {
                     require('lspconfig').markdown_oxide.setup({})
                     require('lspconfig').html.setup({})
                     require('lspconfig').cssls.setup({})
+                    require('lspconfig').bashls.setup({})
+                    require('lspconfig').omnisharp.setup({})
+                    require('lspconfig').neocmake.setup({})
+                    require('lspconfig').gopls.setup({})
+                    require('lspconfig').ts_ls.setup({})
+                    require('lspconfig').biome.setup({})
+                    require('lspconfig').glsl_analyzer.setup({})
+                    require('lspconfig').psalm.setup({})
+                    require('lspconfig').pyright.setup({})
+                    require('lspconfig').sqlls.setup({})
+                    require('lspconfig').lemminx.setup({})
                 end,
             },
         })
