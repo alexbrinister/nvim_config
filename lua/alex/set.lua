@@ -28,7 +28,7 @@ vim.opt.colorcolumn = "80"
 
 
 if vim.fn.has('win32') == 1 then
-    vim.o.shell = 'powershell'
+    vim.o.shell = 'pwsh'
 end
 
 vim.o.shellcmdflag =
