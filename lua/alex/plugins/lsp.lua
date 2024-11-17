@@ -66,6 +66,8 @@ return {
                     require('lspconfig').pyright.setup({})
                     require('lspconfig').sqlls.setup({})
                     require('lspconfig').lemminx.setup({})
+                    require('lspconfig').zls.setup {}
+                    require('lspconfig').ols.setup {}
                 end,
             },
         })
