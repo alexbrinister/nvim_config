@@ -1,3 +1,4 @@
-# VimConfig
-Personal NeoVim Config
-Following a tutorial by the Primeagen with lazy packer
+# Neovim Config 
+My personal NeoVim Config
+
+Clone to ~/appdata/local/nvim on windows.

@@ -29,12 +29,6 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set(
-    "n",
-    "<leader>ee",
-    "oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
-)
-
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
@@ -44,3 +38,5 @@ vim.keymap.set("n", "<leader>B", ":!.\\build_release.bat", opts)
 vim.keymap.set("n", "<leader>r", ":!.\\build\\cgame.exe", opts)
 
 vim.keymap.set("n", "<leader>db", ":!remedybg -g -q debugger.rdbg", opts)
+
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/appdata/local/nvim/lua/alex/init.lua<CR>");
