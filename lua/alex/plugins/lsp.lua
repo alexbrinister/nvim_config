@@ -45,29 +45,30 @@ return {
         })
         require('mason').setup({})
         require('mason-lspconfig').setup({
+            ensure_installed = {
+                "azure_pipelines_ls",
+                "biome",
+                "clangd",
+                "glsl_analyzer",
+                "gopls",
+                "html",
+                "lua_ls",
+                "ltex",
+                "neocmake",
+                "ols",
+                "powershell_es",
+                "pylsp",
+                "sqlls",
+                "tailwindcss",
+                "yamlls",
+                "zls",
+            },
+            automatic_installation = true,
             handlers = {
-                function(server_name)
-                    require('lspconfig').clangd.setup({})
-                    require('lspconfig').lua_ls.setup({})
-                    require('lspconfig').powershell_es.setup({})
-                    require('lspconfig').yamlls.setup({})
-                    require('lspconfig').vimls.setup({})
-                    require('lspconfig').markdown_oxide.setup({})
-                    require('lspconfig').html.setup({})
-                    require('lspconfig').cssls.setup({})
-                    require('lspconfig').bashls.setup({})
-                    require('lspconfig').omnisharp.setup({})
-                    require('lspconfig').neocmake.setup({})
-                    require('lspconfig').gopls.setup({})
-                    require('lspconfig').ts_ls.setup({})
-                    require('lspconfig').biome.setup({})
-                    require('lspconfig').glsl_analyzer.setup({})
-                    require('lspconfig').psalm.setup({})
-                    require('lspconfig').pyright.setup({})
-                    require('lspconfig').sqlls.setup({})
-                    require('lspconfig').lemminx.setup({})
-                    require('lspconfig').zls.setup {}
-                    require('lspconfig').ols.setup {}
+                function(server_name) -- default handler (optional)
+                    require("lspconfig")[server_name].setup {
+                        capabilities = capabilities
+                    }
                 end,
             },
         })
