@@ -55,6 +55,18 @@ return {
                 "powershell_es",
                 "pylsp",
                 "zls",
+                "cucumber-language-server",
+                "jsonls",
+                "rust-analyzer",
+                "yamlls",
+                "gitlab_ci_ls",
+                "hdl_chcker",
+                "azure_pipelines_ls",
+                "arduino_language_server",
+                "asm_lsp",
+                "awk_ls",
+                "bashls",
+                "dockerls"
             },
             automatic_installation = true,
             handlers = {
