@@ -46,21 +46,14 @@ return {
         require('mason').setup({})
         require('mason-lspconfig').setup({
             ensure_installed = {
-                "azure_pipelines_ls",
-                "biome",
                 "clangd",
                 "glsl_analyzer",
-                "gopls",
-                "html",
                 "lua_ls",
                 "ltex",
                 "neocmake",
                 "ols",
                 "powershell_es",
                 "pylsp",
-                "sqlls",
-                "tailwindcss",
-                "yamlls",
                 "zls",
             },
             automatic_installation = true,
