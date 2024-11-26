@@ -1,4 +1,9 @@
-# Neovim Config 
-My personal NeoVim Config
+# neovim config 
+My personal NeoVim Config.
 
-Clone to ~/appdata/local/nvim on windows.
+# setup
+## linux
+`git clone <url> ~/.config/nvim`
+
+## winblows
+`git clone <url> ~/appdata/local/nvim`
