@@ -43,10 +43,16 @@ return {
             lsp_attach = lsp_attach,
             capabilities = require('cmp_nvim_lsp').default_capabilities(),
         })
-        require('mason').setup({})
+        require('mason').setup({
+            ensure_installed = {
+                "delve"
+            },
+            automatic_installation = true
+        })
         require('mason-lspconfig').setup({
             ensure_installed = {
                 "clangd",
+                "gopls",
                 "glsl_analyzer",
                 "lua_ls",
                 "ltex",
@@ -55,12 +61,11 @@ return {
                 "powershell_es",
                 "pylsp",
                 "zls",
-                "cucumber-language-server",
+                "cucumber_language_server",
                 "jsonls",
-                "rust-analyzer",
                 "yamlls",
                 "gitlab_ci_ls",
-                "hdl_chcker",
+                -- "hdl_checker",
                 "azure_pipelines_ls",
                 "arduino_language_server",
                 "asm_lsp",
