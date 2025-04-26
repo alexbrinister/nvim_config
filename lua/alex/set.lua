@@ -43,6 +43,16 @@ vim.opt.number = true
 vim.opt.exrc = true
 vim.opt.secure = true
 
+vim.opt.listchars = {
+    tab = '▸ ',
+    trail = '·',
+    extends = '>',
+    precedes = '<',
+    eol = '↴',
+    nbsp = '␣'
+}
+vim.opt.list = true
+
 if vim.fn.has('win32') == 1 then
     vim.opt.undodir = os.getenv("USERPROFILE") .. "/.vim/undodir"
     vim.o.shellcmdflag =
