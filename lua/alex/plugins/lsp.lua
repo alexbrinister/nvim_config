@@ -15,6 +15,16 @@ return {
     },
     config = function()
         local lsp_zero = require('lsp-zero')
+        lsp_zero.format_on_save({
+            format_opts = {
+                async = true,
+                timeout_ms = 10000,
+            },
+            servers = {
+                ['rustaceanvim'] = { 'rust' },
+                ['clangd'] = { 'c', 'cpp' },
+            }
+        })
 
         -- lsp_attach is where you enable features that only work
         -- if there is a language server active in the file
